@@ -24,6 +24,8 @@
 		display:inline-block;
 		width:230px;
 	}
+	
+	textarea { vertical-align: top; }​ 
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
