@@ -69,17 +69,33 @@
 									<header>
 										<h3>Need help? Check our FAQ!</h3>
 									</header>
+									<script>
+										function myFunction(x) {
+											var x = document.getElementById(x);
+											if (x.style.display === 'none') {
+												x.style.display = 'block';
+											} else {
+												x.style.display = 'none';
+											}
+										}
+									</script>
 									<ul>
-										<a href="#">How long does it take to get a certificate?</a>
+										<a onclick="myFunction('1')">How long does it take to get a certificate?</a>
+										<div id="1" style="display: none;">Certificates will be emailed almost instantly after purchase.
+										Physical copy delivery times can vary from 5-7 business days.</div>
 									</ul>
 									<ul>
-										<a href="#">How much does a day cost?</a>
+										<a onclick="myFunction('2')">How much does a day cost?</a>
+										<div id="2" style="display: none;">1 Day costs a standard of $10USD. Be on the lookout on our site for bundled discounts!</div>
 									</ul>
 									<ul>
-										<a href="#">Can there be multiple owners for one day?</a>
+										<a onclick="myFunction('3')">Can there be multiple owners for one day?</a>
+										<div id="3" style="display: none;">A day is unique. A recipient can be a couple or a group of people, but two separate parties cannot
+										 purchase the same date.</div>
 									</ul>
 									<ul>
-										<a href="#">More</a>
+										<a onclick="myFunction('4')">More</a>
+										<div id="4" style="display: none;">An additional FAQ page may be coming soon. For now, use the contact form for any further inquries.</div>
 									</ul>
 								</section>
 								<hr />
