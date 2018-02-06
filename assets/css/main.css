@@ -17,6 +17,13 @@
 		font: inherit;
 		vertical-align: baseline;
 	}
+	
+	input { margin-left: 0px; margin-bottom: 30px; padding-right: 50px;}
+
+	label{
+		display:inline-block;
+		width:230px;
+	}
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
@@ -1869,6 +1876,8 @@
 			padding-left: 0.25em;
 		}
 
+	
+		
 /* Form */
 
 	form label {
