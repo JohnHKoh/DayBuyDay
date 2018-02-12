@@ -2095,7 +2095,7 @@
 
 	.wrapper {
 		background: #fff;
-		margin: 0 0 2em 0;
+		/*margin: 0 0 2em 0;*/
 		padding: 6em 0 6em 0;
 	}
 
@@ -2388,7 +2388,7 @@
 	#footer {
 		position: relative;
 		overflow: hidden;
-		padding: 6em 0 6em 0;
+		/*padding: 6em 0 6em 0;*/
 		background: #2b252c;
 		color: #fff;
 	}
@@ -2413,7 +2413,8 @@
 
 			#footer .contact p {
 				text-align: center;
-				margin: 0 0 3em 0;
+				/*margin: 0 0 3em 0;*/
+				margin: 0 0 0 0;
 			}
 
 		#footer .copyright {
