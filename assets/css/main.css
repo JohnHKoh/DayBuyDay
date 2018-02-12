@@ -2096,7 +2096,7 @@
 	.wrapper {
 		background: #fff;
 		/*margin: 0 0 2em 0;*/
-		padding: 6em 0 6em 0;
+		padding: 2em 0 2em 0;
 	}
 
 		.wrapper.style2 {
@@ -2339,7 +2339,7 @@
 	#banner {
 		background: #fff;
 		text-align: center;
-		padding: 4.5em 0 4.5em 0;
+		padding: 1em 1em 1em 1em;
 		margin-bottom: 0;
 	}
 
@@ -2408,12 +2408,12 @@
 		}
 
 		#footer .contact {
+			padding-top: 2em;
 			text-align: center;
 		}
 
 			#footer .contact p {
 				text-align: center;
-				/*margin: 0 0 3em 0;*/
 				margin: 0 0 0 0;
 			}
 
@@ -2609,8 +2609,9 @@
 		/* Banner */
 
 			#banner {
-				padding-left: 2em;
-				padding-right: 2em;
+				/*padding-left: 2em;
+				padding-right: 2em;*/
+				padding:2em 2em 2em 2em;
 			}
 
 		/* Footer */
@@ -2957,14 +2958,14 @@
 		/* Wrapper */
 
 			.wrapper {
-				padding: 3em 1em 3em 1em;
+				/*padding: 1em 1em 1em 1em;*/
 			}
 
 		/* Header */
 
 			#header {
 				background-attachment: scroll;
-				padding: 2.5em 0 0 0;
+				padding: 0 0 0 0;
 			}
 
 				#header .inner {
