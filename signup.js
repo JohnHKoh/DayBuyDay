@@ -12,16 +12,25 @@ function validateForm()
     if (field.value === "") {
 		field.style.borderColor = 'red';
 		empty.push(fieldname);
-        var x = document.getElementById("error");
-	    if (x.style.display === 'none') {
-			x.style.display = 'block';
-		}
       filled = false;
+    } else
+    {
+        field.style.borderColor = 'initial';
+        empty.pop(fieldname);
     }
   }
+
+  var x = document.getElementById("error");
+
   if (!filled) {
-	  var message = "All fields must be filled."
-	  document.getElementById('msg').innerHTML = message;
+  	if (x.style.display === 'none') {
+  	  x.style.display = 'block';
+  	}
+	var message = "All fields must be filled."
+	document.getElementById('msg').innerHTML = message;
+  }
+  else {
+    x.style.display = 'none';
   }
   return filled;
 }
