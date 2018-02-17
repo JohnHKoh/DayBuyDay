@@ -14,8 +14,9 @@
         <!--[if lte IE 8]>
         <link rel="stylesheet" href="assets/css/ie8.css" />
         <![endif]-->
+        <script src="login.js"></script>
     </head>
-    <body class="left-sidebar">
+    <body class="left-sidebar" onload="checkCreated()">
         <div id="page-wrapper">
             <!-- Header -->
             <div id="header">
@@ -62,12 +63,16 @@
 										Customize your user experience.
 									</p>
 								</header>
+                                <div id="created" style="display: none;">
+                                    <label id="msg" style="width: 400px; color: green;">Account created!</label>
+                                    <br /><br />
+                                </div>
 								<label>Email</label><input type="text" placeholder="user@example.com" />
 								<br />
 								<label>Password</label><input type="password"/>
 								<br />
 								  <div class="checkbox">
-									<label><input type="checkbox"> Remember me</label>
+                                      <label>Remember Me</label><input type="checkbox" style="margin-left: -100px">
 								  </div>
 								<br /><br />
 								<a href="#" class="button">Login</a>
