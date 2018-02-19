@@ -29,8 +29,8 @@ function validateForm() {
         document.getElementById('msg').innerHTML = message;
     } else {
         x.style.display = 'none';
-        // DO SOMETHING WHEN ACCOUNT FIELDS ARE VALID HERE
         document.getElementById('submitBtn').href = "login.html";
+		document.getElementById('submitForm').submit();
         localStorage.setItem("created", "true");
     }
     return filled;

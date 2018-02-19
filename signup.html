@@ -188,7 +188,9 @@
 								<label>Confirm Password</label><input type="password" id="confpass" onfocusout="checkPass()"/>
                                 <div id="invPass" style="display: none; padding-left: 230px; margin-top: -25px; color: red;">Passwords must match.</div>
 								<br /><br />
-								<a id="submitBtn" onclick="validateForm()" href="#" class="button">Signup</a>
+								<form method="post" id="submitForm" action="submit.php">
+									<a id="submitBtn" onclick="validateForm()" href="#" class="button">Sign Up</a>
+								</form>
 							</article>
                         </div>
                     </div>
