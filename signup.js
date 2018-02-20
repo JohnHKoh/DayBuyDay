@@ -23,15 +23,24 @@ function validateForm() {
     if (!filled || !checkEmail() || !checkZip() || !checkPass()) {
         if (x.style.display === 'none') {
             x.style.display = 'block';
-            document.getElementById('submitBtn').href = "#form";
+            var url = location.href;               //Save down the URL without hash.
+			location.href = "#form";               //Go to the target element.
+			history.replaceState(null,null,url);   //Don't like hashes. Changing it back.
         }
         var message = "All fields must be filled and valid."
         document.getElementById('msg').innerHTML = message;
     } else {
         x.style.display = 'none';
-        // DO SOMETHING WHEN ACCOUNT FIELDS ARE VALID HERE
-        document.getElementById('submitBtn').href = "login.html";
-        localStorage.setItem("created", "true");
+		localStorage.setItem("created", "true");
+		document.getElementById('firstId').value = document.getElementById('first').value;
+		document.getElementById('lastId').value = document.getElementById('last').value;
+		document.getElementById('emailId').value = document.getElementById('email').value;
+		document.getElementById('addressId').value = document.getElementById('address').value;
+		document.getElementById('cityId').value = document.getElementById('city').value;
+		document.getElementById('stateId').value = document.getElementById('state').value;
+		document.getElementById('zipId').value = document.getElementById('zip').value;
+		document.getElementById('passId').value = document.getElementById('pass').value;
+        document.getElementById('submitForm').action = "submit.php";
     }
     return filled;
 }

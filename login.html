@@ -16,7 +16,7 @@
         <![endif]-->
         <script src="login.js"></script>
     </head>
-    <body class="left-sidebar" onload="checkCreated()">
+    <body class="left-sidebar">
         <div id="page-wrapper">
             <!-- Header -->
             <div id="header">
@@ -67,6 +67,9 @@
                                     <label id="msg" style="width: 400px; color: green;">Account created!</label>
                                     <br /><br />
                                 </div>
+								<script type="text/javascript">
+									checkCreated();
+								</script>
 								<label>Email</label><input type="text" placeholder="user@example.com" />
 								<br />
 								<label>Password</label><input type="password"/>
