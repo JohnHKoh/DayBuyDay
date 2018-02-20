@@ -189,7 +189,15 @@
                                 <div id="invPass" style="display: none; padding-left: 230px; margin-top: -25px; color: red;">Passwords must match.</div>
 								<br /><br />
 								<form method="post" id="submitForm" action="submit.php">
-									<a id="submitBtn" onclick="validateForm()" href="#" class="button">Sign Up</a>
+									<input type="hidden" id="firstId" name="firstName"/>
+									<input type="hidden" id="lastId" name="lastName"/>
+									<input type="hidden" id="emailId" name="emailName"/>
+									<input type="hidden" id="addressId" name="addressName"/>
+									<input type="hidden" id="cityId" name="cityName"/>
+									<input type="hidden" id="stateId" name="stateName"/>
+									<input type="hidden" id="zipId" name="zipName"/>
+									<input type="hidden" id="passId" name="passName"/>
+									<input class="button" type="submit" onclick="return validateForm()" value="Sign Up"/>
 								</form>
 							</article>
                         </div>
