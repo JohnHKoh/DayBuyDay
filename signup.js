@@ -20,7 +20,7 @@ function validateForm() {
 
     var x = document.getElementById("error");
 
-    if (!filled || !checkEmail() || !checkZip() || !checkPass()) {
+    if (!filled || !checkEmail() || !checkZip() || !checkPass() || !checkAddress()) {
         if (x.style.display === 'none') {
             x.style.display = 'block';
             var url = location.href;               //Save down the URL without hash.
@@ -59,6 +59,24 @@ function checkEmail() {
     else {
         err.style.display = 'none';
         email.style.borderColor = 'initial';
+        return true;
+    }
+}
+
+function checkAddress() {
+    var address = document.getElementById("address");
+    var err = document.getElementById("invAddress");
+    var regex = RegExp('^\\d[a-zA-Z\\s\\d\\/]*\\d[\\.a-zA-Z\\s\\d\\/]*$');
+    var valid = regex.test(address.value);
+
+    if (!valid) {
+        err.style.display = 'block';
+        address.style.borderColor = 'red';
+        return false;
+    }
+    else {
+        err.style.display = 'none';
+        address.style.borderColor = 'initial';
         return true;
     }
 }

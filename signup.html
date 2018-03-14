@@ -121,7 +121,8 @@
 								<label>Email</label><input type="text" placeholder="user@example.com" id="email" onfocusout="checkEmail()"/>
 								<div id="invEmail" style="display: none; padding-left: 230px; margin-top: -25px; color: red;">Not a valid email address.</div>
 								<br />
-								<label>Address</label><input type="text" id="address" onkeydown="return alphaNumeric(event);"/>
+								<label>Address</label><input type="text" id="address" onfocusout="checkAddress()"/>
+                                <div id="invAddress" style="display: none; padding-left: 230px; margin-top: -25px; color: red;">Not a valid address.</div>
 								<br />
 								<label>City</label><input type="text" id="city" onkeydown="return alphaOnly(event);"/>
 								<br />

@@ -45,6 +45,6 @@
 		$conn->close();
 		?>
 		<script type="text/javascript">
-			window.location = 'login.html';
+			window.location = 'signup.html';
 		</script>
         
