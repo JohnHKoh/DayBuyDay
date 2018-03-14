@@ -41,7 +41,6 @@ function validateForm() {
 		document.getElementById('zipId').value = document.getElementById('zip').value;
 		document.getElementById('passId').value = document.getElementById('pass').value;
         document.getElementById('submitForm').action = "submit.php";
-        localStorage.setItem("created", "true");
     }
     return filled;
 }

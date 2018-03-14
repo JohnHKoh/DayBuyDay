@@ -1,5 +1,5 @@
 Website is:
-https://johnhkoh.github.io/DayBuyDay/
+https://johnhkoh.github.io/Swaglets/
 
 
 Helios by HTML5 UP
