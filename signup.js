@@ -31,7 +31,6 @@ function validateForm() {
         document.getElementById('msg').innerHTML = message;
     } else {
         x.style.display = 'none';
-<<<<<<< HEAD
 		localStorage.setItem("created", "true");
 		document.getElementById('firstId').value = document.getElementById('first').value;
 		document.getElementById('lastId').value = document.getElementById('last').value;
@@ -42,18 +41,7 @@ function validateForm() {
 		document.getElementById('zipId').value = document.getElementById('zip').value;
 		document.getElementById('passId').value = document.getElementById('pass').value;
         document.getElementById('submitForm').action = "submit.php";
-=======
-		document.getElementById('firstId').value = document.getElementById('first').value;
-		document.getElementById('lastId').value = document.getElementById('last').value;
-		document.getElementById('emailId').value = document.getElementById('email').value;
-		document.getElementById('adressId').value = document.getElementById('adress').value;
-		document.getElementById('cityId').value = document.getElementById('state').value;
-		document.getElementById('stateId').value = document.getElementById('city').value;
-		document.getElementById('zipId').value = document.getElementById('zip').value;
-		document.getElementById('passId').value = document.getElementById('pass').value;
-        document.getElementById('submitForm').action = "submit.php";
         localStorage.setItem("created", "true");
->>>>>>> b67107c1da27834e5ad9ca7f8595a17befc5cf0e
     }
     return filled;
 }
