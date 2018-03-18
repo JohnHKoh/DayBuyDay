@@ -130,3 +130,28 @@ function alphaNumeric(event) {
     var key = event.keyCode;
     return ( (key >= 48 && key <= 57) || (key >= 65 && key <= 90) || key === 8 || key === 32 || key === 189 || key === 9);
 }
+
+function checkCreated() {
+    var check = localStorage.getItem("created");
+    console.log(check);
+    if (check === "true") {
+        document.getElementById('created').style.display = "block";
+        localStorage.setItem("created", "false");
+    }
+    else if (check === "dup") {
+        document.getElementById('created').style.display = "block";
+        document.getElementById('msg2').style.color = "red";
+        document.getElementById('msg2').innerHTML = "Email already in use.";
+        localStorage.setItem("created", "false");
+    }
+    else if (check === "emailErr") {
+        document.getElementById('created').style.display = "block";
+        document.getElementById('msg2').style.color = "red";
+        document.getElementById('msg2').innerHTML = localStorage.getItem("emailErrMsg");
+        localStorage.setItem("created", "false");
+    }
+    else {
+        document.getElementById('created').style.display = "none";
+        localStorage.setItem("created", "false");
+    }
+}
