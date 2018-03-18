@@ -40,9 +40,9 @@
         $mail->Host = "smtp.gmail.com";
         $mail->Port = 465; //587
         $mail->IsHTML(true);
-        $mail->Username = "****@gmail.com"; // YOUR EMAIL HERE
-        $mail->Password = "****"; //PASSWORD HERE
-        $mail->SetFrom("****@gmail.com"); // YOUR EMAIL HERE
+        $mail->Username = "daybuyday.email@gmail.com"; // YOUR EMAIL HERE
+        $mail->Password = "AlfredWeaver"; //PASSWORD HERE
+        $mail->SetFrom("daybuyday.email@gmail.com"); // YOUR EMAIL HERE
         $mail->Subject = 'Your account for DayBuyDay was successfully created!';
         $mail->Body = '<html><body>Welcome to DayBuyDay, ' . $first . '! <br>Explore your new account today!</html></body>';
         $mail->AddAddress($email);
