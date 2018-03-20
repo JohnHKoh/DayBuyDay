@@ -44,7 +44,7 @@
         $mail->Password = "AlfredWeaver"; //PASSWORD HERE
         $mail->SetFrom("daybuyday.email@gmail.com"); // YOUR EMAIL HERE
         $mail->Subject = 'Your account for DayBuyDay was successfully created!';
-        $mail->Body = '<html><body>Welcome to DayBuyDay, ' . $first . '! <br>Explore your new account today!</html></body>';
+        $mail->Body = '<html><body>Welcome to DayBuyDay, ' . $first . '! <br>Explore your new account today and start purchasing your days!</html></body>';
         $mail->AddAddress($email);
 
         if (!$mail->send()) {
