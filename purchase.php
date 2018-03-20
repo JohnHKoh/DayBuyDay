@@ -10,6 +10,11 @@
 	$price = json_decode(file_get_contents($url), true);
 	$price2 = $price['USD'];
 	$recent = $price2['last'];
+
+	$btc1499 = 14.99/$recent;
+	$btc4999 = 49.99/$recent;
+
+
 ?>
     <head>
         <title>Checkout</title>
@@ -87,8 +92,8 @@
 									</p>
                                     <label style="width: 700px; padding-bottom: 20px; color: green"><?php echo "Currently 1 BTC is equivalent to $recent USD"; ?></label>
                                     <form>
-                                      <input type="radio" name="amount" value="day" checked onchange="changeButton('day')"> One Day ($14.99)<br>
-                                      <input type="radio" name="amount" value="week" onchange="changeButton('week')"> One Week ($49.99)<br>
+                                      <input type="radio" name="amount" value="day" checked onchange="changeButton('day')"> One Day (<?php echo $btc1499; ?> BTC)<br>
+                                      <input type="radio" name="amount" value="week" onchange="changeButton('week')"> One Week (<?php echo $btc4999; ?> BTC)<br>
                                     </form>
                                     <form action="https://test.bitpay.com/checkout" method="post" >
                                         <input type="hidden" name="action" value="checkout" />
