@@ -40,6 +40,7 @@
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="signup.html">Signup</a></li>
                         <li><a href="login.html">Login</a></li>
+			<li><a href="purchase.php">Purchase</a></li>
                         <li><a href="contact.php">Contact Us</a></li>
                     </ul>
                 </nav>
