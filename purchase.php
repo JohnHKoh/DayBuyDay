@@ -5,6 +5,13 @@
     Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
     -->
 <html>
+    <?php
+	$url = "https://blockchain.info/ticker";
+	$price = json_decode(file_get_contents($url), true);
+	$price2 = $price['USD'];
+	$recent = $price2['last'];
+	echo "Currently 1 USD is equivalent to $recent BTC";
+?>
     <head>
         <title>Checkout</title>
         <meta charset="utf-8" />
@@ -16,6 +23,7 @@
         <![endif]-->
 		<script src="purchase.js"></script>
     </head>
+
     <body class="left-sidebar">
         <div id="page-wrapper">
             <!-- Header -->
