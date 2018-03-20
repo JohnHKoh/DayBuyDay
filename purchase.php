@@ -10,14 +10,13 @@
 	$price = json_decode(file_get_contents($url), true);
 	$price2 = $price['USD'];
 	$recent = $price2['last'];
-	echo "Currently 1 USD is equivalent to $recent BTC";
 ?>
     <head>
         <title>Checkout</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-        <link rel="stylesheet" href="assets/css/signuppage.css" />
+        <link rel="stylesheet" href="assets/css/purchase.css" />
         <!--[if lte IE 8]>
         <link rel="stylesheet" href="assets/css/ie8.css" />
         <![endif]-->
@@ -84,8 +83,9 @@
 								<header>
 								<!-- 	<h2><a href="#">Checkout</a></h2> -->
 									<p>
-										Select an Option  
+										Select an Option
 									</p>
+                                    <label style="width: 400px; padding-bottom: 20px; color: green"><?php echo "Currently 1 BTC is equivalent to $recent USD"; ?></label>
                                     <form>
                                       <input type="radio" name="amount" value="day" checked onchange="changeButton('day')"> One Day ($14.99)<br>
                                       <input type="radio" name="amount" value="week" onchange="changeButton('week')"> One Week ($49.99)<br>
