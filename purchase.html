@@ -14,7 +14,7 @@
         <!--[if lte IE 8]>
         <link rel="stylesheet" href="assets/css/ie8.css" />
         <![endif]-->
-		<script src="signup.js"></script>
+		<script src="purchase.js"></script>
     </head>
     <body class="left-sidebar">
         <div id="page-wrapper">
@@ -80,17 +80,14 @@
 										Come buy one  
 									</p>
                                     <form>
-                                      <input type="radio" name="amount" value="day" checked> One Day<br>
-                                      <input type="radio" name="amount" value="week"> One Week<br>
-                                    </form> 
-                                    <script>
-                                        
-                                    </script>
+                                      <input type="radio" name="amount" value="day" checked onchange="changeButton('day')"> One Day<br>
+                                      <input type="radio" name="amount" value="week" onchange="changeButton('week')"> One Week<br>
+                                    </form>
                                     <form action="https://test.bitpay.com/checkout" method="post" >
-                                    <input type="hidden" name="action" value="checkout" />
-                                    <input type="hidden" name="posData" value="" />
-                                    <input type="hidden" name="data" value="7/f26+/YTFW63Wx80y4/F8nTTZaNCE4vdA1j1xBsJ9Cxsm+talKFmKdTilYvzTL6tCtet+Ssr7q/gBBtDLmgYhGhP2O05kgkxkIzpmIo2UoORnkm9lVhoBVGDRHGheP8lq5C+ddnnDQ4dNYouT3NxStaq9IyqexVW8e5y29xhZgFhxD7f/BlrFOLtPs93vsIYYJ67VNEfL8RsnNYkgVXGU1o1EZ/A/xX8dLiOsm7fOpqHO4pf9Y73nLVTzf4JJlJb6kcb+L4mpQyv6UhoZ7M7g==" />
-                                    <input type="image" src="https://test.bitpay.com/img/button-large.png" border="0" name="submit" alt="BitPay, the easy way to pay with bitcoins." >
+                                        <input type="hidden" name="action" value="checkout" />
+                                        <input type="hidden" name="posData" value="" />
+                                        <input id="payButton" type="hidden" name="data" value="7/f26+/YTFW63Wx80y4/F8nTTZaNCE4vdA1j1xBsJ9Cxsm+talKFmKdTilYvzTL6Zpc6vqZkGI/Sb2SdO8HS8Blw7TmEux+cP0cjLinUYH7sGt+ID0tvnp3sj95j5eRJTCwHC9G1qLM8T8fVXbFNj1h3Pm3ZLVCgNv81iuvPxyOhoxvBZyGstnCHvbrp0Rs5MUnQnuuw8zmEB5p9KjOopvJ+7LrLRInhqxD8LAt0Ejn6q2SYmjC7wfE5UbKPv2Fz" />
+                                        <input type="image" src="https://test.bitpay.com/img/button-large.png" border="0" name="submit" alt="BitPay, the easy way to pay with bitcoins." >
                                     </form>
 								</header>		
 							</article>
