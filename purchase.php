@@ -85,7 +85,7 @@
 									<p>
 										Select an Option
 									</p>
-                                    <label style="width: 400px; padding-bottom: 20px; color: green"><?php echo "Currently 1 BTC is equivalent to $recent USD"; ?></label>
+                                    <label style="width: 700px; padding-bottom: 20px; color: green"><?php echo "Currently 1 BTC is equivalent to $recent USD"; ?></label>
                                     <form>
                                       <input type="radio" name="amount" value="day" checked onchange="changeButton('day')"> One Day ($14.99)<br>
                                       <input type="radio" name="amount" value="week" onchange="changeButton('week')"> One Week ($49.99)<br>
