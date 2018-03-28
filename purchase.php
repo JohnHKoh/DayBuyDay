@@ -10,12 +10,16 @@
 	$price = json_decode(file_get_contents($url), true);
 	$price2 = $price['USD'];
 	$recent = $price2['last'];
+	$recent = round($recent,2);
 
 	$btc1499 = 14.99/$recent;
+	$btc1499 = round($btc1499,4);
 	$btc4999 = 49.99/$recent;
+	$btc4999 = round($btc4999,4);
 
 
 ?>
+
     <head>
         <title>Checkout</title>
         <meta charset="utf-8" />
