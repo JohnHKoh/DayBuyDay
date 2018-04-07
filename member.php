@@ -25,6 +25,14 @@
 	$btc4999dis = $btc4999 - ($btc4999*(0.10));
 	$btc4999dis = round($btc4999dis,4);
 
+    if ($_POST) {
+        if (isset($_POST['submit'])) {
+            echo 'wat';
+            session_start();
+            unset($_SESSION["email"]);
+            header("Location: login.php");
+        }
+    }
 
 ?>
 	<head>
@@ -116,8 +124,11 @@
                                         <input id="payButton" type="hidden" name="data" value="7/f26+/YTFW63Wx80y4/F8nTTZaNCE4vdA1j1xBsJ9Cxsm+talKFmKdTilYvzTL6OxNNk0pUGVTkTX2WnhA3MvGKV+LEhJgz4VxKCniBHXfUW1L422KHaWiy0ikgdk7icX8MOiVvW3x5auJhMIRtfBsX0fkXAQjGWahZi+Igr41ZQl72tIbpx/YEf/kiSvaIPyForGerkB1/waCRRy2fD/Ruxv87PD36ZOkjehvhpmzLSTmUcYInjU/ML/JllqVF" />
                                         <input type="image" src="https://test.bitpay.com/img/button-large.png" border="0" name="submit" alt="BitPay, the easy way to pay with bitcoins." >
                                     </form>
-								</header>		
-				<a href="login.html" class="button" style="margin-bottom: 50px">Logout</a>
+								</header>
+                                <form id="logoutForm" method="post">
+                                    <input style="margin-bottom: 50px" name='submit' class="button" type="submit" value="Logout"/>
+                                </form>
+
 							</article>
                         </div>
                     </div>
