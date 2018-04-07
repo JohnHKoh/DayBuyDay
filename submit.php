@@ -7,6 +7,8 @@
     require './PHPMailer/src/PHPMailer.php';
     require './PHPMailer/src/SMTP.php';
 
+    session_start();
+
     $servername = "localhost";
     $username = "root";
     $password = "";
@@ -59,6 +61,7 @@
                 setLocal();
             </script>
             <?php
+            $_SESSION['newuser'] = 'True';
         } else {
             if ($conn->errno === 1062) {
                 ?>
