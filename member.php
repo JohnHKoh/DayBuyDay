@@ -116,7 +116,7 @@
                                         <input type="image" src="https://test.bitpay.com/img/button-large.png" border="0" name="submit" alt="BitPay, the easy way to pay with bitcoins." >
                                     </form>
 								</header>		
-				<a href="login.html" class="button">Logout</a>
+				<a href="login.html" class="button" style="margin-bottom:3cm;">Logout</a>
 							</article>
                         </div>
                     </div>
