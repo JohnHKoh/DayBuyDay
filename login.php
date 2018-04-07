@@ -39,7 +39,7 @@ if ($_POST) {
                 $hash = substr( $hash, 0, 60 );
                 $pass_hash = substr( $pass_hash, 0, 60 );
                 if (password_verify($pass, $hash)) {
-                    header('Location: '.'index.html');
+                    header('Location: '.'member.php');
                     exit();
                 } else {
                     $result = '<div id="sent" style="display: block;"><label id="msg" style="width: 400px; color: red;">Incorrect password!</label><br /><br /></div>';
