@@ -7,6 +7,11 @@
 <html>
 <?php
 
+session_start();
+if(isset($_SESSION['email'])){
+    header("Location:member.php");
+}
+
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -39,6 +44,7 @@ if ($_POST) {
                 $hash = substr( $hash, 0, 60 );
                 $pass_hash = substr( $pass_hash, 0, 60 );
                 if (password_verify($pass, $hash)) {
+                    $_SESSION['email'] = $email;
                     header('Location: '.'member.php');
                     exit();
                 } else {

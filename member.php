@@ -6,6 +6,10 @@
 -->
 <html>
     <?php
+    session_start();
+    if(!isset($_SESSION['email'])){
+        header("Location:login.php");
+    }
 	$url = "https://blockchain.info/ticker";
 	$price = json_decode(file_get_contents($url), true);
 	$price2 = $price['USD'];
