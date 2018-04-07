@@ -34,6 +34,7 @@
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+        <script src="purchaseMember.js"></script>
 	</head>
 	<body class="left-sidebar">
 		<div id="page-wrapper">
