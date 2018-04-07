@@ -21,7 +21,7 @@
 
     $first = $_POST["firstName"];
     $last = $_POST["lastName"];
-    $email = $_POST["emailName"];
+    $email = strtolower($_POST["emailName"]);
     $address = $_POST["addressName"];
     $city = $_POST["cityName"];
     $state = $_POST["stateName"];

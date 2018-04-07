@@ -139,6 +139,7 @@ if ($_POST) {
                                         document.getElementById('contactForm').action = "contact.php";
                                     }
                                     else {
+                                        document.getElementById('contactForm').action = "";
                                         document.getElementById('sent').style.display = 'block';
                                         document.getElementById('msg').style.color = 'red';
                                         document.getElementById('msg').innerHTML = "Please fill in all fields.";
