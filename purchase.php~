@@ -18,7 +18,7 @@
 	$btc4999 = round($btc4999,4);
 
 	$page = $_SERVER['PHP_SELF'];
-	$time = 3;
+	$time = 5;
 
 	for($i = 0; $i<9999;$i++){
 		header("Refresh: $time; url=$page");
